@@ -1,0 +1,591 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.title{
+   background-color: #263342;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   padding: 10px;
+}
+
+.inner-title{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+.phone p{
+    margin:0px 0px 0px 8%;
+    font-weight: boldera;
+}
+
+.phone i{
+    color: gold;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width:50%;
+}
+
+.search i{
+    background-color: #ff4880;
+    border-radius: 200px;
+    padding: 7px;
+    position: relative;
+    text-align: center;
+}
+
+.search i::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ff4880;
+    top: -4px;
+    left: -4px;
+    border-radius:200px;
+    padding: 3px;
+}
+
+
+.facebook{
+    display: none;
+}
+.program{
+    display: none;
+}
+
+.location{
+    display: none;
+}
+
+
+
+.innerNav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+}
+
+.brand img{
+    width: 100%;
+    max-width: 140px;
+    margin: 5% 0 0 0;
+}
+
+.navIcon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lines{
+    border: 2px solid black;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    margin: 0 0 0 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    background-color: black;
+    /* border: 2px solid red; */
+    height: 2px;
+    width: 30px;
+    margin: 3px 0;
+}
+
+.mid{
+    height: 4px;
+}
+
+.top{
+    transition: .3s all ease-in;
+}
+.bottom{
+    transition: .3s all ease-in;
+}
+
+
+.lines:hover .mid{
+    display: none;
+}
+
+.lines:hover .top{
+    transform: rotate(45deg) translateY(2px) translateX(3px);
+    border: 1px solid black;
+}
+
+.lines:hover .bottom{
+    transform: rotate(-45deg) translateY(-3px) translateX(2px);
+    border: 1px solid black;
+}
+
+.navItems{
+    display: none;
+}
+
+
+
+
+
+.intro{
+    background-image: url("/img/planeKid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+}
+
+.bird{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.clouds{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:5%;
+}
+
+
+.bird img{
+    width: 30%;
+    max-width: 120px;
+    animation: bird 1.5s linear infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bird {
+    0%{transform: translateY(0px);}
+   50%{transform: translateY(50px);}
+}
+
+.clouds img{
+    width: 100%;
+    max-width: 220px;
+    animation: cloud 6s linear infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes cloud {
+    0%{transform: translateX(0px);}
+   50%{transform: translateX(110px);}
+}
+
+
+.buttonIntro{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #ff4880;
+    width: 180px;
+    color: white;
+    padding: 10px 10px;
+}
+.buttonIntro p{
+    margin:0px 5% 0px 0px;
+}
+
+.buttonIntro i{
+    background-color: white;
+    color: #ff4880;
+    padding: 3px;
+    border-radius: 100px;
+}
+
+
+
+@media (min-width:400px) and (max-width:600px){
+   
+   .search{
+       display: none;
+   }
+   
+    .facebook{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+    }
+
+    .facebook a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .facebook i{
+        transition: .3s all ease-in;
+    }
+
+    .facebook i:hover{
+        transform: rotatey(360deg);
+    }
+}
+
+
+
+.continutIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: #ff4880;
+    font-size: 20px;
+}
+
+#descriere{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+@media (min-width:601px) and (max-width:800px){
+    .search{
+        display: none;
+    }
+
+    .inner-title{
+        /* border: 2px solid red; */
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 1% 0 0;
+    }
+
+    .facebook{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .facebook a{
+        font-size: 15px;
+        background-color: #1ab9ff;
+        padding: 8px 12px;
+        border-radius: 100px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .facebook i{
+        transition: .3s all ease-in;
+    }
+
+    .facebook i:hover{
+        transform: rotatey(360deg);
+    }
+
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 65%;
+    }
+
+    .phone p{
+        margin: 0px 2% 0px 2%;
+    }
+    .animatii{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .continutIntro{
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width:801px) and (max-width:1000px){
+
+    .search{
+        display: none;
+    }
+
+    .inner-title{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: .3fr .5fr .7fr;
+        grid-template-rows: auto;
+        padding: 10px;
+    }
+    .program{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .location{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .title i{
+        color: gold;
+        margin:0px 5% 0px 0%;
+    }
+
+    .title p{
+        margin:0px 0% 0px 0%;
+       font-weight: bold;
+       font-size: 14px;
+    }
+
+    .phone{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .animatii{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .continutIntro{
+        width: 50%;
+    }
+
+
+}
+
+
+@media (min-width:1001px){
+   
+    .search{
+        display: none;
+    }
+
+
+    .inner-title{
+        width: 80%;
+        margin: auto auto auto 10%;
+        display: grid;
+        grid-template-columns: .2fr .5fr 1fr;
+        grid-template-rows: auto;
+        padding: 10px;
+    }
+
+
+
+    .program{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .location{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0 0 0 10%;
+    }
+
+    .title i{
+        color: gold;
+        margin:0px 5% 0px 0%;
+    }
+
+    .title p{
+        margin:0px 0% 0px 0%;
+       font-weight: bold;
+       font-size: 14px;
+    }
+
+    .phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 15%; */
+        /* margin: auto; */
+        text-align: center;
+    }
+   
+   
+   
+   
+    .facebook{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+
+    .facebook a{
+        font-size: 15px;
+        background-color: #1ab9ff;
+        padding: 8px 12px;
+        border-radius: 100px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .facebook i{
+        transition: .3s all ease-in;
+        color: white;
+    }
+
+    .facebook i:hover{
+        transform: rotatey(360deg);
+    } 
+
+
+
+
+
+
+    .nav{
+        padding: 20px;
+    }
+
+    .innerNav{
+        display: grid;
+        grid-template-columns: 1fr 3fr .5fr;
+        grid-template-rows: auto;
+    }
+
+    .brand{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand img{
+        width: 100%;
+    }
+
+    .navIcon{
+        display: none;
+    }
+
+
+    .navItems{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navItems a{
+        text-decoration: none;
+        color: black;
+        margin-right:3%;
+        font-size: 18px;
+        text-align: center;
+        padding: 8px;
+        transition: .3s all ease-in;
+    }
+
+    .search2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width:100%;
+    }
+    
+    .search2 i{
+        background-color: #ff4880;
+        color: white;
+        border-radius: 200px;
+        padding: 7px;
+        position: relative;
+        text-align: center;
+    }
+
+    .search2 i::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 2px dotted #ff4880;
+        top: -4px;
+        left: -4px;
+        border-radius:200px;
+        padding: 3px;
+    }
+
+
+    .navItems a:hover{
+        background-color: #ff4880;
+        color: white;
+        /* padding: 10px; */
+        border-radius:5px ;
+    }
+    
+
+    .animatii{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+    .continutIntro{
+        width: 50%;
+    }
+
+}
