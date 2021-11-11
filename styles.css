@@ -758,6 +758,227 @@ body{
 
 
 
+.conectarea{
+    background-color: #ebd59c;
+    width: 20%;
+    max-width: 75px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: white;
+    font-size: 30px;
+    /* border: 2px dotted blue; */
+    margin:5% 20px;
+  
+
+    position: relative;
+}
+
+@keyframes conectt{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.anim-box{
+    animation: conectt .8s linear 1;
+}
+
+.anim-box2{
+    animation: kids .8s linear 1;
+}
+
+
+@keyframes kids{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.binocular{
+    animation: bino .8s linear 1;
+}
+
+@keyframes bino{
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+
+.conect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    animation: conectt .8s linear 1;
+}
+.conectarea i{
+    margin: 20%;
+}
+
+.conectarea::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -5px;
+    padding: 3px;
+    border: 2px dotted #ffc000;;
+    content: "";
+    border-radius: 100px;
+}
+
+.cutiuta3{
+    text-align: center;
+}
+
+.cutiuta3 h1{
+    margin: 0px;
+}
+
+
+.crab img{
+    width: 15%;
+    animation: crabie 3s linear infinite;
+}
+
+@keyframes crabie{
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(20px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(-20px);}
+    100%{transform: translateY(0px);}
+}
+
+
+.bee3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: bee2 .5s linear 1;
+}
+
+
+.bee3 img{
+    width: 40%;
+    max-width: 130px;
+}
+
+@keyframes bee2{
+    0%{
+        opacity: 1;
+    }
+
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.claseCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.claseCard img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+.claseCard h1{
+    color: #ff7800;
+    margin: 0px;
+    font-size: 25px;
+    font-family: 'Rochester', cursive;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: orange;
+    margin-top: 15%;
+}
+
+.claseCard p{
+    color: #54595f;
+    font-size: 18px;
+    margin-top: 0px;
+    line-height: 25px;
+}
+
+
+.varsta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.varsta p{
+    margin: 0px 0px 0px 5px;
+    color: #7a7a7a;
+}
+
+.varsta i{
+    color: #48d11a;
+}
+
+
+.claseButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #48d11a;
+    padding: 10px;
+    color: white;
+    border-radius: 20px 0px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.claseButton p{
+    margin: 0px 0px 0px 5px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.clase{
+    margin-top: 10%;
+}
+
+
 @media (min-width:400px) and (max-width:600px){
    
    .search{
@@ -806,6 +1027,8 @@ body{
     font-weight: bolder;
     font-size: 25px;
 }
+
+
 
 
 @media (min-width:601px) and (max-width:800px){
@@ -896,7 +1119,6 @@ body{
         grid-template-columns: 7fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: "text imagine"
-        "text imagine"
     }
 
 
@@ -941,6 +1163,25 @@ body{
     .cutiuta{
         grid-area: text;
     }
+
+
+    .binocular img{
+        width: 80%;
+    }
+
+
+    .conect{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+    }
+
+
+
+    
 }
 
 
@@ -1053,6 +1294,37 @@ body{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
+    }
+
+    .continutValori{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .conect{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .cutiuta3{
+        text-align: left;
+    }
+
+
+    .claseCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap:20px
+    }
+
+    .claseCard{
+        margin-top: 0px;
     }
 
 
@@ -1359,5 +1631,123 @@ body{
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
     }
+
+
+
+    
+    .continutValori{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+
+    .conect{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .cutiuta3{
+        text-align: left;
+    }
+
+
+    
+    .continutBox{
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "text imagine"
+    }
+
+
+    .continutBox2{
+        display: grid;
+        grid-template-columns: 2fr 7fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagine2 text2";
+    }
+
+    .cutiuta2{
+        grid-area: text2;
+    }
+
+    .kid{
+        grid-area: imagine2;
+    }
+
+    .atention{
+        grid-area: imagine2;
+    }
+
+
+    .heart{
+        grid-area: imagine;
+    }
+
+    .hand{
+        grid-area: imagine;
+    }
+
+    .cutiuta h1{
+        text-align: right;
+    }
+
+
+
+    .heart{
+        width: 100%;   
+        padding: 10px 5px;   
+        margin:30px 20px;
+    }
+
+
+    .hand{
+        /* grid-area: imagine; */
+        width: 100%;   
+        padding: 10px 5px;   
+        margin:30px 20px;
+    }
+
+    .kid{
+        width: 60%;   
+    }
+    
+    .atention{
+        width: 60%;   
+    }
+
+
+
+    .claseCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap:20px
+    }
+
+    .claseCard{
+        margin-top: 0px;
+
+    }
+
+    .claseCard img{
+        max-height: 200px;
+    }
+
+
+    .claseCard2 .line{
+       margin-top: 20%;
+    }
+
+    /* .claseCard1 .line{
+        margin-top: 6%;
+    } */
+
+
 
 }
