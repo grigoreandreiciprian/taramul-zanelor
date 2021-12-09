@@ -1353,6 +1353,199 @@ body{
     border: 2px solid #1ab9ff4d;
 }
 
+.galerie{
+    padding: 20px;
+}
+
+.butoaneGalerie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gBtn{
+    margin: 1%;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    transition: .5s all;
+}
+
+
+.gBtn:hover{
+    background-color: #ff4880;
+    color: white;
+}
+
+
+.poze{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.poze img{
+    width: 100%;
+    margin: 2%;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.inscriere{
+    padding: 20px;
+    background-color: #abcd52;
+}
+
+.inscriereContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.inscriereContainer h1{
+    color: #ff4880;
+    /* margin: 0px; */
+}
+
+.inscriere span{
+    color: white;
+    margin: 0px;
+}
+
+.inscriere p{
+    color: white;
+}
+
+
+
+.base{
+    padding: 20px;
+    background-color: #35135a;
+}
+
+
+.facebook2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.facebook2 a{
+    font-size: 15px;
+    background-color: #1ab9ff;
+    padding: 8px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.facebook2 i{
+    transition: .3s all ease-in;
+}
+
+.facebook2 i:hover{
+    transform: rotatey(360deg);
+}
+
+
+.baseLogo{
+    padding: 20px;
+    color: white;
+}
+
+.baseLogo img{
+    width: 50%;
+    
+}
+
+
+.baseContact{
+    color: white;
+
+    font-size: 20px;
+}
+
+
+.contactBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactBox i{
+    margin-right:20px;
+    color: gold;
+}
+
+.baseMeniu h1{
+    color: white;
+}
+
+.baseMeniu a{
+    color: white;
+    text-decoration: none;
+    margin: 1%;
+    font-size: 20px;
+}
+
+.baseMeniu i{
+    font-size: 10px;
+}
+
+
+.abonament{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+
+    padding: 20px 0px;
+}
+
+.abonament input{
+    width: 80%;
+    padding: 10px 20px;
+    margin: 2%;
+}
+
+.subscribe{
+    width: 80%;
+    padding: 10px 20px;
+    margin: 2%;
+    background-color: #ff4880;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.baseContact p{
+    margin: 10px;
+}
+
+.footer{
+    text-align: center;
+    background-color: #201031;
+    padding: 10px;
+    color: white;
+
+}
+
 
 
 @media (min-width:400px) and (max-width:600px){
@@ -1557,6 +1750,15 @@ body{
 
 
 
+    .poze{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:30px;
+        padding: 20px;
+    }
+
+
+
     
 }
 
@@ -1751,6 +1953,15 @@ body{
         margin: auto;
         margin: 2%;
         /* padding: 10px; */
+    }
+
+
+
+    .poze{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:30px;
+        padding: 20px;
     }
 
 
@@ -2231,6 +2442,40 @@ body{
         width: 300px;
         margin: 2%;
         /* padding: 10px; */
+    }
+
+
+    .poze{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-gap:10px; */
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .poze img{
+        max-width: 300px;
+        min-width: 300px;
+        
+    }
+
+
+
+    .inscriereContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .base{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:50px;
     }
 
 }
